@@ -3,21 +3,29 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tuesday</title>
+  <title>内网渗透 | Tuesday</title>
 
   
   <meta name="author" content="John Doe">
   
 
   
+  <meta name="description" content="title:内网渗透
+内网渗透信息收集windows
+用户操作
+query user #查看当前在线的用户whoami #查看当前用户net user #查看当前系统的用户net user xxx #查看xxx用户的详细信息net1 user #查看当前系统的用户net user /domain #">
+  
 
+  
+  
+  <meta name="keywords" content="">
   
 
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  
+  <meta property="og:title" content="内网渗透"/>
 
   <meta property="og:site_name" content="Tuesday"/>
 
@@ -54,12 +62,11 @@
 </header>
 
     <main class="site-main posts-loop">
-    
-  <article>
+    <article>
 
   
     
-    <h3 class="article-title"><a href="/2020/02/19/内网渗透/"><span>内网渗透</span></a></h3>
+    <h3 class="article-title"><span>内网渗透</span></h3>
     
   
 
@@ -869,90 +876,13 @@
   </div>
 </article>
 
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2019/10/25/使用github搭建hexo静态博客的教程/"><span>使用github搭建hexo静态博客的教程</span></a></h3>
-    
   
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2019/10/25/使用github搭建hexo静态博客的教程/" rel="bookmark">
-        <time class="entry-date published" datetime="2019-10-25T08:14:43.000Z">
-          2019-10-25
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h2>GitHub创建个人仓库</h2>
-首先，你先要有一个GitHub账户。<br />
-注册完登录后，在GitHub.com中看到一个New repository，新建仓库。<br />
-创建一个和你用户名相同的仓库，后面加.github.io，也就是username.github.io。<br />
-点击create repository。<br />
-<h2>生成SSH添加到GitHub</h2>
-打开git bash<br />
-<strong>git config --global user.name "yourname"</strong><br />
-<strong>git config --global user.email "youremail"</strong><br />
-这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱，这样GitHub才能知道你是不是对应它的账户。<br />
-然后创建SSH，疯狂回车。<br />
-<strong>ssh-keygen -t rsa -C "youremail"</strong><br />
-这个时候它会告诉你已经生成了.ssh的文件夹，在你的电脑中找到这个文件夹。<br />
-而后在GitHub的setting中，找到SSH keys的设置选项，点击New SSH key<br />
-把你的id_rsa.pub里面的信息复制进去。<br />
-在gitbash中，查看是否成功。<br />
-<strong>-T git@github.com</strong><br />
-<h2>配置_config.yml</h2>
-1.deploy:<br />
-2. type: git<br />
-3. repo: git@github.com:YourgithubName/YourgithubName.github.io.git<br />
-4. branch: master<br />
-这个时候需要先安装deploy-git，也就是部署的命令，这样你才能用命令部署到GitHub。<br />
-<strong>
-    install hexo-deployer-git --save<br />
-    hexo clean<br />
-    hexo generate<br />
-    hexo deploy<br />
-</strong>
-其中 hexo clean清除了你之前生成的东西，也可以不加。<br/>
-hexo generate 顾名思义，生成静态文章，可以用 hexo g缩写。<br/>
-hexo deploy 部署文章，可以用hexo d缩写。<br/>
-最后访问这个http://yourname.github.io<br/>
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
 
 
 
 
-<nav class="pagination">
-  
-  
-</nav>
+
     </main>
 
     <footer class="site-footer">
